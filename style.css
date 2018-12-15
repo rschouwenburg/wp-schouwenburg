@@ -1,8 +1,8 @@
 /*!
 Theme Name: Schouwenburg
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: https://schouwenburg.com
+Author: Robert Schouwenburg
+Author URI: https://schouwenburg.com
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -389,21 +389,54 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+	font-family: 'Milo TE';
+	src: url('wp-content/themes/schouwenburg/fonts/milo-primary-subset-bd.woff2');
+	src: url('wp-content/themes/schouwenburg/fonts/milo-primary-subset-rg.woff2');
+}
+
+@font-face {
+	font-family 'Roboto';
+	src: url('wp-content/themes/schouwenburg/fonts/Roboto-Regular.woff2');
+	src: url('wp-content/themes/schouwenburg/fonts/Roboto-Medium.woff2');
+}
+
+html {
+	font-size: 20px;
+}
+
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
+	color: #0E2F3C;
+	font-family: 'Milo TE', serif;
+	font-size: 1em;
+	line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h1.entry-title {
+	margin: 0 0 .714em;
+	line-height: 1.25;
+}
+
+h2.entry-subtitle {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 0.89em;
+	color: #F9461C;
+	margin: 0 0 .1em;
+	line-height: 1.35;
 }
 
 p {
@@ -637,10 +670,12 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	height: 62px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 0.75em;
 }
 
 .main-navigation ul {
@@ -681,11 +716,17 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin-left: 40px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #FFF;
+}
+
+.main-navigation a:hover {
+	color: #F9461C;
 }
 
 /* Small menu. */
@@ -844,7 +885,9 @@ a:hover, a:active {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
 }
 
 .updated:not(.published) {
@@ -982,4 +1025,73 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## Schouwenburg
+--------------------------------------------------------------*/
+
+.site-header {
+	background-color: #0E2F3C;
+	height: 62px;
+}
+
+.site-header-content {
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 80px;
+}
+
+.site-branding {
+	float: left;
+	background-color: #007EA0;
+	width: 250px;
+	text-align: center;
+	color: #FFF;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 62px;
+	padding: 0.45em;
+}
+
+.site-branding .logo-part-robert {
+	font-size: 0.6em;
+	line-height: 1em;
+	letter-spacing: 0.1em;
+}
+
+.site-branding .logo-part-schouwenburg {
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+}
+
+.site-branding .logo-part-schouwenburg-text {
+	border-top: 1px solid #FFF;
+}
+
+.menu-main-container {
+	line-height: 62px;
+}
+
+.site-content {
+	margin-top: 3em;
+}
+
+.entry-meta {
+	padding-bottom: 6px;
+	border-top: 1px solid #CACCD1;
+	border-bottom: 1px solid #CACCD1;
+	font-family: "Roboto", sans-serif;
+}
+
+.tags-links {
+	font-weight: 500;
+	font-size: 0.8em;
+}
+
+.entry-meta-other {
+	font-size: 0.7em;
+	color: #838994;	
 }

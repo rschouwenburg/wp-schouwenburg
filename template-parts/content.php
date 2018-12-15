@@ -13,18 +13,48 @@
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
+			the_subtitle( '<h2 class="entry-subtitle">', '</h2>');
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_subtitle( '<h2 class="entry-subtitle">', '</h2>');
+			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
+				<div class="entry-tags">
+					<?php
+					$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'schouwenburg' ) );
+					if ( $tags_list ) {
+						/* translators: 1: list of tags. */
+						printf( '<span class="tags-links">' . esc_html__( '%1$s >', 'schouwenburg' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+					}
+					?>
+				</div>
+				<div class="entry-meta-other">
 				<?php
-				schouwenburg_posted_on();
-				schouwenburg_posted_by();
+				schouwenburg_posted_on(); 
+				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+					echo ' | <span class="comments-link">';
+					comments_popup_link(
+						sprintf(
+							wp_kses(
+								/* translators: %s: post title */
+								__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'schouwenburg' ),
+								array(
+									'span' => array(
+										'class' => array(),
+									),
+								)
+							),
+							get_the_title()
+						)
+					);
+					echo '</span>';
+				}
 				?>
+				</div><!-- .entry-meta-other -->
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
