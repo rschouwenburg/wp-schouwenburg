@@ -888,6 +888,7 @@ a:hover, a:active {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 640px;
+	margin-bottom: 5em;
 }
 
 .updated:not(.published) {
