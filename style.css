@@ -430,6 +430,20 @@ h1.entry-title {
 	line-height: 1.25;
 }
 
+.page h1.entry-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+}
+
+.page h1.entry-title::after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 1.25em;
+	height: 0.25em;
+	background: #007ea0;
+}
+
 h2.entry-subtitle {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
