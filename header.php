@@ -26,13 +26,15 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-header-content">
-			<div class="site-branding">
-				<div class="logo-part-robert">Robert</div>
-				<div class="logo-part-schouwenburg"><span class="logo-part-schouwenburg-text">Schouwenburg</span></div>
-			</div><!-- .site-branding -->
+			<a href="/">
+				<div class="site-branding">
+					<div class="logo-part-robert">Robert</div>
+					<div class="logo-part-schouwenburg"><span class="logo-part-schouwenburg-text">Schouwenburg</span></div>
+				</div><!-- .site-branding -->
+			</a>
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'schouwenburg' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_template_directory_uri(); ?>/assets/view-app-grid-symbolic.svg"></button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

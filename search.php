@@ -10,6 +10,8 @@
 get_header();
 ?>
 
+	<?php get_search_form(); ?>
+
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -42,7 +44,7 @@ get_header();
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+/*			get_template_part( 'template-parts/content', 'none' ); */
 
 		endif;
 		?>
