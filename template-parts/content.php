@@ -40,7 +40,7 @@
 				</div>
 				<div class="entry-meta-other">
 				<?php
-				schouwenburg_posted_on(); 
+				schouwenburg_posted_on();
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 					echo ' | <span class="comments-link">';
 					comments_popup_link(
