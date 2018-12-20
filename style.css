@@ -1460,6 +1460,16 @@ form.subscribe-form .subscribe-field {
 	border-radius: 0 28px 28px 0;
 }
 
+.search-form .search-submit:active,
+.subscribe-form .subscribe-submit:active,
+.search-form .search-submit:focus,
+.subscribe-form .subscribe-submit:focus,
+.search-form .search-submit:hover,
+.subscribe-form .subscribe-submit:hover {
+	background: #007EA0;
+	outline: 0;
+}
+
 /*--------------------------------------------------------------
 ## Search
 --------------------------------------------------------------*/
