@@ -1429,6 +1429,7 @@ form.subscribe-form .subscribe-field {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	padding-left: 1em;
+	padding-right: 0.5em;
 	font-family: "Roboto", sans-serif;
 	font-size: 17px;
 	border: 1px solid #CACCD1;
