@@ -976,8 +976,7 @@ a:hover, a:active {
 	display: block;
 }
 
-.blog .post,
-.page {
+.blog .post {
 	margin-bottom: 5em;
 }
 
@@ -1295,6 +1294,7 @@ button.menu-toggle img {
 }
 
 .site-content {
+	min-height: calc(100vh - 94px - 3em - 8em + 1em);
 	margin-top: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -1309,6 +1309,11 @@ button.menu-toggle img {
 }
 
 footer.site-footer {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.7em;
+	color: #838994;
+	margin-bottom: 0.7em;
 	margin-top: 8em;
 }
 
@@ -1349,22 +1354,28 @@ footer.site-footer {
 .entry-recommendations {
 	background: #eaebec;
   position: relative;
-  left: -50vw;
-  width: 150vw;
-	padding-top: 1.5em;
+  left: calc(-50vw + 300px);
+  width: 100vw;
+	padding-top: 2em;
   padding-bottom: 0.5em;
 }
 
 .entry-recommendations-content {
+	padding-left: 1em;
+	padding-right: 1em;
 	columns: 2;
 }
 
 @media screen and (max-width: 767px) {
 
+	.entry-recommendations {
+		left: -1em;
+		height: 610px;
+		overflow: hidden;
+	}
+
 	.entry-recommendations-content {
 		max-width: calc(100vw - 2em);
-    margin-left: 50vw;
-    margin-right: 0;
 		columns: 1;
 	}
 
@@ -1410,7 +1421,8 @@ nav .nav-links {
 	border: 0;
 }
 
-form.search-form .search-field {
+form.search-form .search-field,
+form.subscribe-form .subscribe-field {
 	width: 20em;
 	height: 40px;
 	border-radius: 28px 0 0 28px;
@@ -1427,13 +1439,18 @@ form.search-form .search-field {
 	form.search-form .search-field {
 		width: calc(100% - 70px);
 	}
+	form.subscribe-form .subscribe-field {
+		width: calc(100% - 88px);
+	}
 }
 
-.search-form .search-field:focus {
+.search-form .search-field:focus,
+.subscribe-form .subscribe-field:focus {
 	outline: 0;
 }
 
-.search-form .search-submit {
+.search-form .search-submit,
+.subscribe-form .subscribe-submit {
 	font-family: "Roboto", sans-serif;
 	background: #00B2E2;
 	color: #FFF;
