@@ -791,10 +791,17 @@ a:hover, a:active {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li:focus > ul {
 	position: fixed;
-	left: 0;
+	left: calc(50% - 650px);
 	width: 600px;
 	top: 62px;
 	max-height: 340px;
+}
+
+@media screen and (max-width: 1300px) {
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li:focus > ul {
+		left: 0;
+	}
 }
 
 @media screen and (min-width: 1023px) {
