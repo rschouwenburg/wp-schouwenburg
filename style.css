@@ -794,6 +794,7 @@ a:hover, a:active {
 	left: 0;
 	width: 600px;
 	top: 62px;
+	max-height: 340px;
 }
 
 @media screen and (min-width: 1023px) {
@@ -1257,6 +1258,7 @@ button.menu-toggle img {
     line-height: 32px;
 		padding-left: 40px;
 		columns: 1;
+		max-height: none;
 	}
 
 	.main-navigation.toggled .sub-menu .menu-item {
