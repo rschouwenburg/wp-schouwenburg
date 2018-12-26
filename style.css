@@ -740,6 +740,7 @@ a:hover, a:active {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
+	padding-left: 0.5em;
 }
 
 .main-navigation ul {
