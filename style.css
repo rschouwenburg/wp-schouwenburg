@@ -1498,6 +1498,10 @@ form.subscribe-form .subscribe-field {
 	border-bottom: 1px solid #CACCD1;
 }
 
+article .entry-title, .entry-subtitle {
+	letter-spacing: -0.02em;
+}
+
 .search article h3.entry-subtitle,
 .archive article h3.entry-subtitle {
 	font-family: 'Roboto', sans-serif;
