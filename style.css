@@ -816,7 +816,7 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-	margin-left: 40px;
+	margin-left: 3em;
 }
 
 .main-navigation a {
@@ -1371,6 +1371,20 @@ footer.site-footer {
   width: 100vw;
 	padding-top: 2em;
   padding-bottom: 0.5em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+/* ugly hack: somehow, somewhy, something puts p-tags around 'similar
+stories' performance metric html comment. Can't figure out why. */
+.entry-recommendations + p {
+	display: none;
+}
+
+/* ugly hack 2: somehow, somewhy, something makss first story in
+recommendation box shift by 2px. No idea why. */
+.entry-recommendations a:first-child article {
+	height: calc(160px - 0.05em);
 }
 
 .entry-recommendations-content {
