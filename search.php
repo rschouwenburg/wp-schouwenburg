@@ -48,7 +48,11 @@ get_header();
 
 		else :
 
-/*			get_template_part( 'template-parts/content', 'none' ); */
+			if ( get_search_query() ) :
+
+				get_template_part( 'template-parts/content', 'none' );
+
+			endif;
 
 		endif;
 		?>
