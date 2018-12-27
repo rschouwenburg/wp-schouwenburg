@@ -90,6 +90,7 @@ add_action( 'after_setup_theme', 'schouwenburg_setup' );
  *
  * @global int $content_width
  */
+
 function schouwenburg_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
@@ -158,4 +159,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
