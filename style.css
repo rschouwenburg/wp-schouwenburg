@@ -1142,6 +1142,13 @@ body {
 	overflow-y: scroll;
 }
 
+a, input[type=submit] {
+    -webkit-transition: color 100ms ease;
+    transition: color 100ms ease;
+    -webkit-transition-property: color,border-bottom-color, background;
+    transition-property: color,border-bottom-color, background;
+}
+
 .site {
 	overflow: hidden;
 }
@@ -1230,7 +1237,7 @@ button.menu-toggle img {
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	background: #eaebec;
+	background: #F5F7F9;
 	padding: 1em 2em 1em 2em;
 }
 
@@ -1552,5 +1559,10 @@ article .entry-title, .entry-subtitle {
 
 .search a:hover article .entry-summary,
 .archive a:hover article .entry-summary {
+	color: #0E2F3C;
+}
+
+.search a article .entry-summary,
+.archive a article .entry-summary {
 	color: #0E2F3C;
 }
