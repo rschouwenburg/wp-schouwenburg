@@ -1336,7 +1336,7 @@ footer.site-footer {
 }
 
 .blog article {
-	border-bottom: 1px solid #CACCD1;
+	border-bottom: 1px solid #DADCE1;
 }
 
 .entry-title a {
@@ -1346,8 +1346,8 @@ footer.site-footer {
 
 .entry-meta {
 	padding-bottom: 6px;
-	border-top: 1px solid #CACCD1;
-	border-bottom: 1px solid #CACCD1;
+	border-top: 1px solid #DADCE1;
+	border-bottom: 1px solid #DADCE1;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -1518,7 +1518,7 @@ form.subscribe-form .subscribe-field {
 .search article,
 .archive article {
 	margin-bottom: 1em;
-	border-bottom: 1px solid #CACCD1;
+	border-bottom: 1px solid #DADCE1;
 }
 
 article .entry-title, .entry-subtitle {
