@@ -780,14 +780,14 @@ a:hover, a:active {
 
 @media screen and (min-width: 1023px) {
 
-	.main-navigation ul li.menu-item-2025:hover::after {
-		content: '';
-		position: absolute;
+	.main-navigation ul > li:first-child:hover::after {
+	  content: '';
+	  position: absolute;
 	  left: 30%;
-		bottom: 0;
+	  bottom: 0;
 	  width: 0;
 	  height: 0;
-		border-color: transparent transparent #eaebec;
+	  border-color: transparent transparent #eaebec;
 	  border-style: solid;
 	  border-width: 0 8px 8px;
 	  z-index: 2;
@@ -798,7 +798,7 @@ a:hover, a:active {
 .main-navigation ul li:focus > ul {
 	position: fixed;
 	left: calc(50% - 650px);
-	width: 600px;
+	width: 700px;
 	top: 62px;
 	max-height: 340px;
 }
@@ -1256,7 +1256,7 @@ button.menu-toggle img {
 }
 
 .main-navigation ul.sub-menu {
-	columns: 2;
+	columns: 3;
 	line-height: 2;
 }
 
