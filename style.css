@@ -497,6 +497,10 @@ p {
 	margin-bottom: 1.5em;
 }
 
+p + ul {
+	margin-top: -1.5em;
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }
