@@ -1400,7 +1400,7 @@ stories' performance metric html comment. Can't figure out why. */
 /* ugly hack 2: somehow, somewhy, something makss first story in
 recommendation box shift by 2px. No idea why. */
 .entry-recommendations a:first-child article {
-	height: calc(160px - 0.05em);
+	margin-top: -1px;
 }
 
 .entry-recommendations-content {
@@ -1426,7 +1426,8 @@ recommendation box shift by 2px. No idea why. */
 .entry-recommendations article {
 	break-inside: avoid;
 	page-break-inside: avoid;
-	height: 160px;
+	height: 158px;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
