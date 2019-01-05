@@ -449,7 +449,7 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+	/* clear: both; */
 }
 
 h1 {
@@ -459,7 +459,7 @@ h1 {
 }
 
 h1.entry-title {
-	margin: 0 0 .48em;
+	margin: 0 0 .86rem;
 	line-height: 1.25;
 }
 
@@ -1352,6 +1352,7 @@ footer.site-footer {
 }
 
 .entry-meta {
+	margin-top: .86rem;
 	padding-bottom: 6px;
 	border-top: 1px solid #DADCE1;
 	border-bottom: 1px solid #DADCE1;
@@ -1445,6 +1446,31 @@ nav .nav-links {
 }
 
 /*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+
+article.post .post-thumbnail {
+  display: block;
+  width: 100%;
+  padding-top: 66.66%;
+  overflow: hidden;
+  position: relative;
+}
+
+article.post .post-thumbnail img {
+  object-fit: cover;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+}
+
+article.post a.post-thumbnail {
+	border-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 ## Form Elements
 --------------------------------------------------------------*/
 .site .wp-block-button__link {
@@ -1510,7 +1536,7 @@ form.subscribe-form .subscribe-field {
 }
 
 /*--------------------------------------------------------------
-## Search
+## Search + archive
 --------------------------------------------------------------*/
 .search .content-area {
 	margin-top: 3em;
@@ -1526,6 +1552,29 @@ form.subscribe-form .subscribe-field {
 .archive article {
 	margin-bottom: 1em;
 	border-bottom: 1px solid #DADCE1;
+	overflow: auto;
+}
+
+.search article.post .post-thumbnail,
+.archive article.post .post-thumbnail {
+  display: block;
+  width: 33%;
+  padding-top: 22.22%;
+  overflow: hidden;
+  position: relative;
+	float: right;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+
+	.search article.post .post-thumbnail,
+	.archive article.post .post-thumbnail {
+		float: none;
+		width: 70%;
+		padding-top: 46.67%
+	}
+
 }
 
 article .entry-title, .entry-subtitle {
