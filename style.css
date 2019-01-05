@@ -497,6 +497,10 @@ p {
 	margin-bottom: 1.5em;
 }
 
+p + ul {
+	margin-top: -1.5em;
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }
@@ -780,14 +784,14 @@ a:hover, a:active {
 
 @media screen and (min-width: 1023px) {
 
-	.main-navigation ul li.menu-item-2025:hover::after {
-		content: '';
-		position: absolute;
+	.main-navigation ul > li:first-child:hover::after {
+	  content: '';
+	  position: absolute;
 	  left: 30%;
-		bottom: 0;
+	  bottom: 0;
 	  width: 0;
 	  height: 0;
-		border-color: transparent transparent #eaebec;
+	  border-color: transparent transparent #eaebec;
 	  border-style: solid;
 	  border-width: 0 8px 8px;
 	  z-index: 2;
@@ -798,7 +802,7 @@ a:hover, a:active {
 .main-navigation ul li:focus > ul {
 	position: fixed;
 	left: calc(50% - 650px);
-	width: 600px;
+	width: 700px;
 	top: 62px;
 	max-height: 340px;
 }
@@ -1256,7 +1260,7 @@ button.menu-toggle img {
 }
 
 .main-navigation ul.sub-menu {
-	columns: 2;
+	columns: 3;
 	line-height: 2;
 }
 
@@ -1397,7 +1401,7 @@ stories' performance metric html comment. Can't figure out why. */
 /* ugly hack 2: somehow, somewhy, something makss first story in
 recommendation box shift by 2px. No idea why. */
 .entry-recommendations a:first-child article {
-	height: calc(160px - 0.05em);
+	margin-top: -1px;
 }
 
 .entry-recommendations-content {
@@ -1423,7 +1427,8 @@ recommendation box shift by 2px. No idea why. */
 .entry-recommendations article {
 	break-inside: avoid;
 	page-break-inside: avoid;
-	height: 160px;
+	height: 158px;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
