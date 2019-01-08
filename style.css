@@ -1244,6 +1244,10 @@ button.menu-toggle img {
 	width: 44px;
 }
 
+.main-navigation.toggled button.menu-toggle {
+	background-color: rgba(240,240,2555,0.15);
+}
+
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	background: #F5F7F9;
@@ -1310,7 +1314,8 @@ button.menu-toggle img {
 	position: absolute;
 	right: 0;
 	top: 62px;
-	background: #4c5058;
+	background-color: #4c5058;
+	background: linear-gradient(to bottom, #50586A, #404859);
 	width: 100%;
 }
 
