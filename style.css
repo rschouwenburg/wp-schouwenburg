@@ -784,7 +784,7 @@ a:hover, a:active {
 
 @media screen and (min-width: 1023px) {
 
-	.main-navigation ul > li:first-child:hover::after {
+	.main-navigation ul.menu > li:first-child:hover::after {
 	  content: '';
 	  position: absolute;
 	  left: 30%;
@@ -1144,6 +1144,9 @@ object {
 --------------------------------------------------------------*/
 body {
 	overflow-y: scroll;
+	-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: antialiased;
 }
 
 a, input[type=submit] {
@@ -1180,6 +1183,7 @@ a, input[type=submit] {
 
 .site-header {
 	background-color: #0E2F3C;
+	background: linear-gradient(to bottom, #134052, #040D11);
 	height: 62px;
 	position: fixed;
 	top: 0;
@@ -1197,6 +1201,7 @@ a, input[type=submit] {
 .site-branding {
 	float: left;
 	background-color: #00B2E2;
+	background: linear-gradient(to bottom, #01B8E9, #00A9D7);
 	width: 260px;
 	text-align: center;
 	color: #FFF;
