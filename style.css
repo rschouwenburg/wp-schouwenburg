@@ -1399,7 +1399,7 @@ footer.site-footer {
 .entry-recommendations {
 	background: #F5F7F9;
   position: relative;
-  left: calc(-50vw + 330px);
+  left: calc(-50vw + 350px);
   width: 100vw;
 	padding-top: 2em;
   padding-bottom: 0.5em;
@@ -1589,7 +1589,6 @@ form.subscribe-form .subscribe-field {
   position: relative;
 	float: right;
 	margin-bottom: 1em;
-	margin-left: 1em;
 }
 
 @media screen and (max-width: 767px) {
