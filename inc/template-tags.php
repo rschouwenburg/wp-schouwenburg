@@ -123,6 +123,11 @@ if ( ! function_exists( 'schouwenburg_post_thumbnail' ) ) :
 			return;
 		}
 
+		$img_url = wp_get_attachment_url( get_post_thumbnail_id() );
+		if ( empty( $img_url ) ) {
+			return;
+		}
+
 		if ( is_singular() ) :
 			?>
 
