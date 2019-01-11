@@ -1348,6 +1348,10 @@ button.menu-toggle img {
 
 }
 
+.entry-content > div:first-child {
+	margin-top: 1em;
+}
+
 footer.site-footer {
 	text-align: center;
 	font-family: "Roboto", sans-serif;
