@@ -760,7 +760,6 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -783,6 +782,10 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 1023px) {
+
+	.main-navigation ul ul {
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	}
 
 	.main-navigation ul.menu > li:first-child:hover::after {
 	  content: '';
