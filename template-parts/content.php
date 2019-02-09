@@ -87,6 +87,7 @@
 			'after'  => '</div>',
 		) );
 		?>
+
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
